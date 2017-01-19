@@ -12,7 +12,8 @@ html {
     /* Make font-size of other elements 
      * multiple of 10 instead of 16 (16px) 
     */
-    font-size: 62.5%;  
+    font-size: 62.5%;
+    /* define line-height: */
 }
 
 body {
@@ -75,6 +76,7 @@ header {
     padding: 0;
 }
 
+/* large screens */
 @media screen and (min-width: 40.5em) and (max-width: 119em) {
     .contact-heading {
         position: relative;
@@ -102,17 +104,22 @@ header {
     }
     
 }
+/* xlarge screens */
 @media screen and (min-width: 120em){
     .contact-heading {
         position: relative;
         display: block;
         width: 100vw;
-        height: 100vh;
+        /*height: 100vh;*/
+        height: 0;
         background-image: url(../images/stockholm-lg-screens.jpg);
+        background-position: center center;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
+        /* 16:9 */
+        padding: 56.25%;
        
     }
     .contact-heading h1{
