@@ -90,9 +90,7 @@ header {
     padding: 0;
 }
 
-/* medium sized screens 48em to 63.94em 
- * (768 to 1023px)
- */
+/* medium sized screens - 768px - 1023px */
 
 @media screen and (min-width: 48em) and (max-width: 63.94em) {
     .contact-heading {
@@ -121,7 +119,7 @@ header {
     }
 }
 
-/* large screens */
+/* large screens - 1024px to 1904px */
 @media screen and (min-width: 64em) and (max-width: 119em) {
     .contact-heading {
         position: relative;
@@ -149,7 +147,7 @@ header {
     }
     
 }
-/* xlarge screens non-retina */
+/* xlarge screens - greater than 1920px*/
 @media screen and (min-width: 120em){
     .contact-heading {
         position: relative;
@@ -188,6 +186,8 @@ main {
     margin: 0 2% 0 2%;
     padding: 0;
 }
+
+/* xlarge screens - greater than 1920px*/
 
 @media screen and (min-width: 120em) {
     main {
@@ -266,8 +266,13 @@ textarea {
    
 }
 
-/* large screens */
+/* medium sized screens - 768px - 1023px */
+
 @media screen and (min-width: 48em) and (max-width: 63.94em) {
+    /* Reduce the size of the input field
+     * in tablets in portrait orientation
+     * and medium-sized screen devices 
+     */
     .full_name input, 
     .other_contact_info input {
         width: 100%;
@@ -278,17 +283,41 @@ textarea {
         border: 0.1rem solid lightgray;
     }
 }
-/*@media screen and (min-width: 64em) and (max-width: 119em) {
+
+/* large screens - 1024px to 1904px */
+
+@media screen and (min-width: 64em) and (max-width: 119em) {
+    .contact_box {
+        width: 60%;
+        height: 100%;
+        padding: 0 20% 0 20%;
+        margin: auto;
+    }
+    .contact_box h3 {
+        margin-top: 1rem;
+    }
+    #contact_form {
+        width: 100%;
+        height: auto;
+    }
+    .full_name, 
+    .other_contact_info {
+        width: 100%;
+        height: auto;
+        margin: auto;
+        padding: 0;
+    }
     .full_name input, 
     .other_contact_info input {
-        width: 100%;
-        /* 40px height - 44 (iOS) 48(Android) CSS px recommended *//*
-        height: 5vw;
-        padding: 0;
+        width: 80%;
+        height: 3vw;
         margin: 0;
+        padding: 0;
         border: 0.1rem solid lightgray;
-}*/
- /* xlarge screens */
+    }
+}
+ /* xlarge screens - greater than 1920px*/
+
 @media screen and (min-width: 120em) {
     .contact_box {
         width: 40%;
@@ -356,7 +385,8 @@ textarea {
     height: auto;
 }
 
-/* xlarge screens */
+/* xlarge screens - greater than 1920px*/
+
 @media screen and (min-width: 120em) {
     .map {
         width: 50%;
