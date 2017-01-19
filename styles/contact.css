@@ -81,7 +81,7 @@ header {
         display: block;
         width: 100vw;
         height: 100vh;
-        background-image: url(images/stockholm-m-screens.jpg);
+        background-image: url(../images/stockholm-m-screens.jpg);
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
