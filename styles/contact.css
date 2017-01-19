@@ -110,16 +110,12 @@ header {
         position: relative;
         display: block;
         width: 100vw;
-        /*height: 100vh;*/
-        height: 0;
+        height: 100vh;
         background-image: url(../images/stockholm-lg-screens@0,5x.jpg);
-        background-position: center center;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-        /* 16:9 */
-        padding: 56.25%;
        
     }
     .contact-heading h1{
