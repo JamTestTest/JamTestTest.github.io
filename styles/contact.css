@@ -104,7 +104,7 @@ header {
     }
     
 }
-/* xlarge screens */
+/* xlarge screens non-retina */
 @media screen and (min-width: 120em){
     .contact-heading {
         position: relative;
@@ -112,7 +112,7 @@ header {
         width: 100vw;
         /*height: 100vh;*/
         height: 0;
-        background-image: url(../images/stockholm-lg-screens.jpg);
+        background-image: url(../images/stockholm-lg-screens@0,5x.jpg);
         background-position: center center;
         -webkit-background-size: cover;
         -moz-background-size: cover;
