@@ -229,7 +229,7 @@ main {
     width: 100%;
     /* tap target sized recommended - 
      * 44 (iOS) 48(Android) CSS px recommended */
-    height: 10vw;
+    line-height: 4.4rem;
     padding: 0;
     margin: 0;
     border: 0.1rem solid lightgray;
@@ -244,7 +244,7 @@ textarea {
     /* 100% of .contact_box section element */
     width: 100%;
     /* 30% of viewport's width */
-    height: 30vw;
+    height: 25vw;
     margin: 0 0 1rem 0;
     padding: 0;
     border: 0.1rem solid lightgray;
@@ -271,9 +271,9 @@ textarea {
      */
     .full_name input, 
     .other_contact_info input {
-        width: 100%;
+        width: 70%;
         /* 40px height - 44 (iOS) 48(Android) CSS px recommended */
-        height: 5vw;
+        line-height: 4.4rem;
         padding: 0;
         margin: 0;
         border: 0.1rem solid lightgray;
@@ -306,7 +306,7 @@ textarea {
     .full_name input, 
     .other_contact_info input {
         width: 80%;
-        height: 3vw;
+        line-height: 3rem;
         margin: 0;
         padding: 0;
         border: 0.1rem solid lightgray;
@@ -338,7 +338,7 @@ textarea {
     .full_name input, 
     .other_contact_info input {
         width: 40%;
-        height: 1.5vw;
+        line-height: 3rem;
         margin: 0;
         padding: 0;
         border: 0.1rem solid lightgray;
