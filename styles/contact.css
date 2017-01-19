@@ -75,7 +75,34 @@ header {
     padding: 0;
 }
 
-@media screen and (min-width: 40.5em) {
+@media screen and (min-width: 40.5em) and (max-width: 119em) {
+    .contact-heading {
+        position: relative;
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        background-image: url(../images/stockholm-m-screens.jpg);
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+       
+    }
+    .contact-heading h1{
+        position: absolute;
+        /* 100% of .contact-heading's width */
+        width: auto;
+        height: auto;
+        top: 45%;
+        left: 45%;
+        margin: 0;
+        padding: 0;
+        font-size: 5rem;
+        font-weight: 500;
+    }
+    
+}
+@media screen and (min-width: 120em){
     .contact-heading {
         position: relative;
         display: block;
@@ -97,6 +124,8 @@ header {
         left: 45%;
         margin: 0;
         padding: 0;
+        font-size: 5rem;
+        font-weight: 500;
     }
     
 }
