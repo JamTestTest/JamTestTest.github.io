@@ -79,7 +79,7 @@ header {
 /* large screens */
 @media screen and (min-width: 40.5em) and (max-width: 119em) {
     .contact-heading {
-        position: absolute;
+        position: relative;
         display: block;
         width: 100vw;
         height: 100vh;
