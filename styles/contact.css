@@ -283,7 +283,8 @@ textarea {
     .contact_box {
         width: 40%;
         height: 100%;
-        padding: 0;
+        padding: 0 0 0 5%;
+        margin: auto;
     }
     #contact_form {
         width: 100%;
@@ -347,12 +348,17 @@ textarea {
     .map {
         width: 50%;
         height: 100%;
-        margin: 0 0 0 5rem;
+        margin: auto;
         padding: 0;
     }
     .map figure {
         width: 85%;
         height: 100%;
+    }
+    .map figure img {
+        width: 100%;
+        height: auto;
+        margin: auto;
     }
 }
 
