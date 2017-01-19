@@ -90,7 +90,6 @@ header {
         display: block;
         top: 0;
         left: 0;
-        z-index: 1;
         width: 100vw;
         height: 100vh;
         background-image: url(../images/stockholm-m-screens.jpg);
@@ -152,7 +151,6 @@ main {
     height: auto;
     margin: 0 2% 0 2%;
     padding: 0;
-    z-index: 2;
 }
 
 /* CONTACT FORM
