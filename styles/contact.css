@@ -62,10 +62,16 @@ p {
   HEADER SECTION
   ============================ */
 header {
+    position: relative;
     width: 100%;
     height: auto;
     padding: 0;
     margin: 0;
+}
+.fixed_menu {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .contact-heading {
