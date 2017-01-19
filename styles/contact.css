@@ -109,7 +109,7 @@ header {
     .contact-heading {
         position: relative;
         display: block;
-        width: 100vw;
+        width: 100%;
         height: 100vh;
         background-image: url(../images/stockholm-lg-screens.jpg);
         -webkit-background-size: cover;
@@ -121,7 +121,7 @@ header {
     .contact-heading h1{
         position: absolute;
         /* 100% of .contact-heading's width */
-        width: 100%;
+        width: auto;
         height: auto;
         top: 0;
         left: 0;
