@@ -146,6 +146,7 @@ header {
    MAIN SECTION
    ============================ */
 main {
+    position: relative;
     /* minus 2% right and left margins */
     width: 96%;
     height: auto;
