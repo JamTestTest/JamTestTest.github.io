@@ -9,6 +9,7 @@
         <title>Pixel Stories</title>
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="styles/contact.css">
+        <link rel="stylesheet" href="styles/footer.css">
         <!-- <script src="nav_menu.js"></script> -->
     </head>
     <body>
@@ -56,12 +57,16 @@
                 <button class="all-buttons ctc" type="submit" form="contact_form" value="submit">Send</button>
             </section>
             <!-- LOCATION MAP SECTION -->
+            <!-- IE does not support srcset.
+           Use conditional statements to 
+           choose a different stylesheet
+           which hides the <img> element with
+           the smallest image and displays only the one with the appropriate images -->
             <section class="map flexbox-fix">
                 <!-- <section> element requires a heading element -->
                 <h3>Find us</h3>
                 <figure>
-                    <img src="images/m_map.png" 
-                         srcset="images/map_large@2x.jpg 1032w"  alt="map">
+                    <img src="images/map-sm.png" srcset="images/map-m.png 809w" alt="location map">
                 </figure>
             </section> 
         </main>

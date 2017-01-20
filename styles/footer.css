@@ -1,0 +1,236 @@
+html {
+    width: 100vw;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    /* Make font-size of other elements 
+     * multiple of 10 instead of 16 (16px) 
+    */
+    font-size: 62.5%;
+    /* define line-height: */
+}
+
+body {
+    /* 100% of html's width */
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans";
+}
+
+/* ==============================================
+   FOOTER
+   ============================ */
+
+footer {
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    /* 100% of the viewport's width */
+    width: 100vw;
+    height: auto;
+    margin: 2rem 0 0 0;
+    /* top space between footer and main */
+    padding: 2rem 0 0 0;
+    border-top: solid 0.1rem;
+    border-color: lightgray;
+}
+.footer_header {
+    /* need to set position here
+     * so we can control the size of its children  
+     */
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+ /* FOTTER HEADER
+    ============================================================= */
+.footer_header a{
+    position: relative;
+    width: 100%;
+    height: 5vw;
+    margin: 0;
+}
+.footer_header img {
+    position: relative;
+    width: 20%;
+    height: auto;
+    left: 40%;
+}
+/* FOTTER ADDRESS AND CONTACT
+   ============================================================= */
+.address_contact {
+    margin: 6% auto 6% auto;
+    text-align: center;
+    color: grey;
+}
+
+/* FOOTER SOCIAL
+   ============================================================= */
+
+footer nav {
+    position: relative;
+    /* same width as body's width */
+    width: 100%;
+    /* 13% of VIEWPORT'S WIDTH */
+    height: 13vw; 
+    margin: 1rem 0 1rem 0;
+       
+}
+
+.social ul {
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    /* same width as footer nav */
+    width: 100%;
+    /* 13% of VIEWPORT'S WIDTH */
+    height: 13vw;
+    margin: 0;
+    padding: 0;
+}
+.social li {
+    /* so we can move the child's position */
+    position: relative;
+    /* 12% of parent's width -  
+     * 49px CSS - min recommended
+     * tap target size 44 -48px CSS*/
+    width: 12%;
+    /* 12% of VIEWPORT WIDTH */
+    height: 12vw;
+    margin: 0.3rem;
+    padding: 0;
+}
+
+.social a {
+    /* relative to its parent's position */
+    position: absolute;
+    /* same width as <li> element */
+    width: 100%;
+    /* 12% of VIEWPORT WIDTH */
+    height: 12vw;
+    /* placed at the beginning of <nav> (parent element) */
+    top: 0;
+    margin: 0;
+    padding: 0;
+
+}
+.social img{
+    position:relative;
+    /* same width as <a> element */
+    width: 100%;
+    /* 12% of VIEWPORT WIDTH */
+    height: 12vw;
+}
+
+ /* FOOTER LARGER SCREENS */
+@media screen and (min-width:40.5em) {
+    footer {
+        flex-direction: row;
+        justify-content: center;
+        position: relative;
+        width: 60%;
+        height: auto;
+        /* must add a 3% padding in order to 
+         * get a space between the footer and 
+         * main - .footer_ header's margin and padding
+         * doesn't seeem to be working in the latest
+         * version of Firefox. A top margin of 3%
+         * would need to be set for Firefox browser 
+         */
+        padding: 0 20% 0 20%;
+        border-top: solid 0.1rem;
+        border-color: lightgray;
+    }
+    
+    .footer_header {
+        /* need to set the position 
+         * of <a> within the div .footer_header
+         */
+        position: relative;
+        /* 80% of its parent - footer */
+        width: 80%;
+        height: auto;
+        /* margin does not work in firefox 50.1 ?? */
+        margin: 5% 0 0 0;
+        padding: 0;
+    }
+    
+    .footer_header a {
+        /* need to move <a> element to the left
+         * so that its child (<img>) is centered
+         */
+        position: absolute;
+        /* bring <a> to the left */
+        left: 0;
+        /* 100% of div .footer_header */
+        width:100%;
+        /* height set to automatically fits
+         * its children elem height
+         */
+        height: auto;
+    }
+    .footer_header img {
+        width: 20%;
+    }
+    .address_contact {
+        width: 20%;
+        /* add 5% space at the top and add 10% space between header and contact */
+        margin: 5% 0  0;
+        font-size: 1.2rem;
+    }
+    /* There is an issue with margin/padding in Safari.
+     * Social network links are placed a little bit further
+     * right than in Chrome and Firefox
+     */
+    footer nav {
+        position: absolute;
+        width: 60%;
+        height: auto;
+        top: 110%;
+        right: 0;
+        margin: 2% 0 2% 0;
+        padding: 0 20% 0 20%;
+    }
+    .social ul {
+        flex-direction: row;
+        justify-content: flex-start;
+        position: relative;
+        width: 25%;
+        height: auto;
+        margin: 0;
+        padding: 0 0 0 75%;
+        list-style-type: none;
+    }
+    
+    .social li {
+        position: relative;
+        /* both width and height set to 4% of viewport's width*/
+        width: 4vw;
+        height: 4vw;
+        /* right margin between social network logos */
+        margin: 0 1% 0 0;
+        padding: 0;
+    }
+    
+    .social a {
+        /* relative to its parent's position */
+        position: absolute;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+    .social img {
+        position:relative;
+        width: 100%; /* 100 % of parent's width */
+        height: auto;
+        margin: 0;
+        padding: 0;
+    
+    }
+    
+}
