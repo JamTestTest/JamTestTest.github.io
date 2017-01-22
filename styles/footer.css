@@ -38,6 +38,13 @@ footer {
     border-color: lightgray;
 }
 
+@media screen and (min-width: 48em) {
+    footer {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
  /* FOTTER HEADER
     ============================================================= */
 .footer_header {
