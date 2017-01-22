@@ -1,3 +1,4 @@
+/* NOT READY - had to change layout */
 html {
     width: 100vw;
     height: auto;
@@ -136,9 +137,12 @@ footer nav {
 @media screen and (min-width: 64em) {
     footer {
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-around;
         position: relative;
+        width: 100%;
+        height: 30%;
         margin: 1rem 0 0 0;
+        padding: 1rem 0 0 0;
     }
     
     /* Footer Header */
@@ -149,7 +153,7 @@ footer nav {
          */
         position: relative;
         width: 40%;
-        margin: 0;
+        margin: 2% 0 0 0;
         padding: 0;
     }
     
@@ -165,14 +169,14 @@ footer nav {
         position: relative;
         width: 40%;
         height: auto;
-        margin: 3rem 0 0;
+        margin: 0;
         padding: 0;
         left: 10%;
     }
     /* Contact Address */
     .address_contact {
         width: 20%;
-        margin: 3rem 0 0 0;
+        margin: 2% 0 0 0;
         padding: 0;
         font-size: 1.6rem;
     }
@@ -181,21 +185,23 @@ footer nav {
     footer nav {
         position: relative;
         width: 40%;
-        margin: 3rem 0 0 0;
+        height: auto;
+        margin: 2% 0 0 3%;
         padding: 0;
     }
     
     .social ul {
         position: absolute;
-        width: 100%;
+        width: 70%;
         height: 100%;
+        right: 0;
         margin: 0;
     }
     
     .social li {
         width: 20%;
         height: auto;
-        margin: 0 1rem 0 0;
+        margin: 0 0 0 1rem;
         padding: 0;
     }
     

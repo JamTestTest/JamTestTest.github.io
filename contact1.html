@@ -26,10 +26,8 @@
                     </ul>
                 </nav>
             </div>
-            <div class="page-title">
-                <div class="heading-wrap">
-                    <h1>Contact Us</h1>
-                </div>
+            <div class="heading-wrap">
+                <h1>Contact Us</h1>
             </div>
         </header>
         <main>
@@ -38,30 +36,18 @@
                 <h3>Tell us about your project</h3>
                 <!-- id to link textarea and button to form -->
                 <form id="contact_form flexbox-fix">
-                    <div class="full-name">
-                        <div class="form-field1">
-                            <div class="form-field-title">Name:</div>
-                        </div>
-                        <div class="form-field-input">
-                            <input type="text" class="left" placeholder="First name">
-                            <input type="text" class="right" placeholder="Last name">
-                        </div>
+                    <!-- Elements grouped in <div> for styling -->
+                    <div class="full_name flexbox-fix">
+                        <label for="First Name">First Name:</label>
+                        <input type="text" name="firstName">
+                        <label for="Surname">Surname:</label>
+                        <input type="text" name="lastName">
                     </div>
-                    <div class="contact-email">
-                        <div class="form-field2">
-                            <div class="form-field-title">Email:</div>
-                        </div>
-                        <div class="form-field-input">
-                            <input type="text" name="email">
-                        </div>
-                    </div>
-                    <div class="contact-telephone">
-                        <div class="form-field3">
-                            <div class="form-field-title">Telephone:</div>
-                        </div>
-                        <div class="form-field-input">
-                            <input type="text" name="telefone">
-                        </div>
+                    <div class="other_contact_info flexbox-fix">
+                        <label for="email">Email:</label>
+                        <input type="text" name="email">
+                        <label for="Telephone">Telephone:</label>
+                        <input type="text" name="telephone">
                     </div>
                 </form>
                 <!-- label, textarea and button element have form attribute to "link" them to the form above -->
