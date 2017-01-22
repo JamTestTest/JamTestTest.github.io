@@ -236,6 +236,15 @@ textarea {
     border: 0.1rem solid lightgray;
 }
 
+.button-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    width: 100%;
+    margin: 2rem 0 2rem 0;
+    padding: 0;
+}
 .ctc {
     position: relative;
     /* start - properties to be removed from this class */
@@ -244,7 +253,6 @@ textarea {
     cursor: pointer;
     font-size: 1.5rem;
     /* end */
-    margin: 1rem auto 1rem auto;
     padding: 0;
     background-color: #f12241;
     border: none;
@@ -255,10 +263,21 @@ textarea {
 .client-support {
     width: 100%;
     margin: 2rem 0 2rem 0;
+    text-align: center;
+    
 }
 
 .client-support p {
     font-style: italic;
+}
+
+.contact-support a {
+    text-decoration: none;
+    color: #f12241;
+}
+.contact-support {
+    color: #f12241;
+    white-space: nowrap;
 }
 
 /* contact form section width set to 60% for medium sized screens */

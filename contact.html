@@ -67,9 +67,11 @@
                 <!-- label, textarea and button element have form attribute to "link" them to the form above -->
                 <label form="contact_form">Message:</label>
                 <textarea name="message" form="contact_form"></textarea>
-                <button class="all-buttons ctc" type="submit" form="contact_form" value="submit">Send</button>
+                <div class="button-wrap">
+                    <button class="all-buttons ctc" type="submit" form="contact_form" value="submit">Send</button>
+                </div>
                 <div class="client-support">
-                    <p>For client support services, please email us at <span>support@pixelstories.se</span> or call us on <a href=”tel:+46730001111”>073 000 11 11.</a></p>
+                    <p>For client support services, please email us at <span class="contact-support">support@pixelstories.se</span> or call us on <span class="contact-support"><a href=”tel:+46730001111”>073 000 11 11.</a></span></p>
                 </div>
             </section>
             <!-- LOCATION MAP SECTION -->
