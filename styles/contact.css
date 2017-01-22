@@ -370,11 +370,6 @@ textarea {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
     /* Retina-specific stuff here */
-    .map {
-        height: 80vw;
-        margin: 0;
-        padding: 0;
-}
     .location-map {
         background-image: url(../images/map-sm-sq.png);
         -webkit-background-size: cover;
