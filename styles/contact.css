@@ -76,7 +76,7 @@ header {
 .page-title {
     display: block;
     width: 96%;
-    height: 20vh;
+    height: 10vh;
     background-color: #f12241;
     margin: 0 2% 0 2%;
 }
@@ -379,7 +379,6 @@ textarea {
  * reduced height so it would not collapse with footer
  */
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
-    /* Retina-specific stuff here */
     .location-map {
         background-image: url(../images/map-sm-sq.png);
         -webkit-background-size: cover;
