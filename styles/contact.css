@@ -314,8 +314,12 @@ textarea {
 
 .ctc {
     position: relative;
-    width: 5rem;
-    height: 2.5rem;
+    /* start - properties to be removed from this class */
+    width: 10rem;
+    height: 3rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    /* end */
     margin: 1rem auto 1rem auto;
     padding: 0;
     background-color: #f12241;
