@@ -274,10 +274,11 @@ textarea {
 .contact-support a {
     text-decoration: none;
     color: #f12241;
+    /* no line break on whitespaces */
+    white-space: nowrap;
 }
 .contact-support {
-    color: #f12241;
-    white-space: nowrap;
+    color: #f12241; 
 }
 
 /* contact form section width set to 60% for medium sized screens */
