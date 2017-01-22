@@ -382,7 +382,7 @@ textarea {
     }
     
     .location-map {
-        background-image: url(../images/map-sm-sq.png);
+        background-image: url(../images/map-lg-sq.png);
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
