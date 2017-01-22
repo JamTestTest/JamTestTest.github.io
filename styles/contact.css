@@ -252,6 +252,15 @@ textarea {
     font-weight: 100; 
 }
 
+.client-support {
+    width: 100%;
+    margin: 2rem 0 2rem 0;
+}
+
+.client-support p {
+    font-style: italic;
+}
+
 /* contact form section width set to 60% for medium sized screens */
 
 @media screen and (min-width: 64em) and (max-width: 120em) {
@@ -260,6 +269,9 @@ textarea {
         height: auto;
         margin: auto;
         padding: 0 20% 0 20%;
+    }
+    .client-support p {
+        font-size: 2rem;
     }
 }
 
@@ -276,6 +288,9 @@ textarea {
      .contact_box h3 {
         width: 100%;
         margin: 0 0 2rem 0;
+    }
+    .client-support p {
+        font-size: 2rem;
     }
 }
 /* Form  and textarea styling for medium to xlarge devices */
